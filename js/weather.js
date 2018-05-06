@@ -18,10 +18,10 @@ function position(pos){
     
     
     
-    
+    console.log(data);
     $("#city").html("County: " + data.name);
     
-  $("#forecast").html("Forecast: " + data.weather[0].description);
+  $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/11d.png' class='mark'></span>");
     $("#humidity").html("Humidity: " + data.main.humidity);
     $("#windSpeed").html("Windspeed: " + data.wind.speed);
     $("#temp").html(Math.round(data.main.temp) + " &#8457");
@@ -42,8 +42,9 @@ function position(pos){
       case 230:
       case 231:
       case 232:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/11d.png' class='mark'>";
+        $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/11d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://cdn.wallpapersafari.com/98/80/3iAclX.jpg)');
+
         break;
       case 300:
       case 301:
@@ -54,7 +55,7 @@ function position(pos){
       case 313:
       case 314:
       case 321:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/09d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/09d.png' class='mark'></span>");
         $('body').css('background-image', 'url(https://ak8.picdn.net/shutterstock/videos/4198687/thumb/1.jpg?i10c=)');
         break;
       case 500:
@@ -62,18 +63,19 @@ function position(pos){
       case 502:
       case 503:
       case 504:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/10d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/10d.png' class='mark'></span>");
         $('body').css('background-image', 'url(https://illuminateddandelion.files.wordpress.com/2016/09/rain.jpg)')
         break;
       case 511:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/13d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/13d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://media.zuza.com/9/f/9feb78d8-edfd-435e-8779-901742e8f299/888_Outage_Update_1___Monster___Gallery.jpg')
         break;
       case 520:
       case 521:
       case 522:
       case 531:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/09d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/09d.png' class='mark'></span>");
+        document.getElementById("tempIcon").innerHTML = "Sunny <img src='http://openweathermap.org/img/w/09d.png' class='mark'>";
         $('body').css('background-image', 'url(https://illuminateddandelion.files.wordpress.com/2016/09/rain.jpg')
         break;
       case 600:
@@ -86,7 +88,7 @@ function position(pos){
       case 620:
       case 621:
       case 622:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/13d.png' class='mark'>";
+        $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/13d.png' class='mark'></span>");
         $('body').css('background-image', 'url(https://i.ytimg.com/vi/ea1GMrjjJ1A/maxresdefault.jpg')
         break;
       case 701:
@@ -99,24 +101,24 @@ function position(pos){
       case 762:
       case 771:
       case 781:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/50d.png' class='mark'>";
+        $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/50d.png' class='mark'></span>");
         $('body').css('background-image', 'url(https://i.ytimg.com/vi/ea1GMrjjJ1A/maxresdefault.jpg)')
         break;
       case 800:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/01d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/01d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://allswalls.com/images/clear-sky-wallpaper-1.jpg');
         
         break;
       case 801:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/02d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/02d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://allswalls.com/images/clear-sky-wallpaper-1.jpg');
       case 802:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/03d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/03d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://www.publicdomainpictures.net/pictures/60000/velka/cloudy-sky-1376239377cOW.jpg');
         break;
       case 803:
       case 804:
-        document.getElementById("tempIcon").innerHTML = "<img src='http://openweathermap.org/img/w/04d.png' class='mark'>";
+      $("#forecast").html("Forecast: " + data.weather[0].description + "<span><img src='http://openweathermap.org/img/w/04d.png' class='mark'></span>");
         $('body').css('background-image', 'url(http://www.publicdomainpictures.net/pictures/60000/velka/cloudy-sky-1376239377cOW.jpg');
         break;
         
@@ -132,14 +134,14 @@ function position(pos){
       $("#temp").html(Math.round((temp -32) * 5 / 9) + "&#8451");
       $("#tempmin").html("Min: " + Math.round((data.main.temp_min - 32) * 5 / 9) + " &#8451");
     $("#tempmax").html("Max: " + Math.round((data.main.temp_max - 32) * 5 / 9) + " &#8451");
-       $("#units").html("Change to &#8457")
+       $("#units").html("&#8451")
        FtoC = 1;
         
      }else if(FtoC === 1){
        $("#temp").html(Math.round(data.main.temp) + " &#8457");
     $("#tempmin").html("Min: " + Math.round(data.main.temp_min) + " &#8457");
     $("#tempmax").html("Max: " + Math.round(data.main.temp_max) + " &#8457");
-       $("#units").html("Change to &#8451")
+       $("#units").html("&#8457")
        FtoC = 0;
      }
       

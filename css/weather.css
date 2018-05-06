@@ -1,0 +1,43 @@
+body{
+  background: no-repeat fixed center; 
+  background-size: cover;
+  font-size: 20px;
+}
+#temp, #tempmax, #tempmin, #city, #forecast, #humidity, #windSpeed{
+  margin-top: 15px;
+  font-weight: bolder;
+}
+#windSpeed{
+  margin-bottom: 10px;
+}
+
+#test {
+    float: left;
+    margin-right: 100px;
+}
+
+.container {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+#forecastBox{
+  float: right;
+}
+
+#tempBox{
+  margin-left: 450px;
+  margin-top: 300px;
+  font-size: 1.3em;
+  background-color: rgba(152, 150, 150, 0.4);;
+}
+
+.mark{
+  vertical-align: middle;
+}
+
+  
+
+
